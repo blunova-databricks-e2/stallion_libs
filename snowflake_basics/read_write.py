@@ -9,7 +9,7 @@ SF_URL_KEY = "SF_URL_KEY"
 
 
 def append_snowflake(user, password, sdf, tablename, sf_url,
-                     database="DEV", schema="MATOGEN", warehouse="MATOGEN_WH"):
+                     database="DEV", schema="MATOGEN", warehouse="CEC_WH"):
     """
     The `mode` option has been specifically set to "append".
     """
@@ -32,7 +32,7 @@ def append_snowflake(user, password, sdf, tablename, sf_url,
 
 
 def append_safely(partition_var_name, partition_var_val, sdf, database, schema, tablename, user, password, sf_url,
-                  warehouse="MATOGEN_WH"):
+                  warehouse="CEC_WH"):
 
     # Determine whether the table exists in the first place.  This is then stored inside `tb_exists`.
     try:
@@ -140,7 +140,7 @@ def append_safely(partition_var_name, partition_var_val, sdf, database, schema, 
 
 
 def read_snowflake(user, password, query, sf_url, database="DEV",
-                   schema="MATOGEN", warehouse="MATOGEN_WH"):
+                   schema="MATOGEN", warehouse="CEC_WH"):
     options = {
         'sfUrl': sf_url,
         'sfUser': user,
@@ -160,7 +160,7 @@ def read_snowflake(user, password, query, sf_url, database="DEV",
 
 
 def write_snowflake(user, password, sdf, tablename, sf_url,
-                    database="DEV", schema="MATOGEN", warehouse="MATOGEN_WH"):
+                    database="DEV", schema="MATOGEN", warehouse="CEC_WH"):
     """
     The `mode` option has been specifically set to "overwrite".
     """
