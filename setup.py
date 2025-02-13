@@ -11,7 +11,7 @@ setup(
                                     'contract_macros', 'Valid_ID', 'risk_appetite', 'ecl', 'ecl_model',
                                     'ppm']),
     license='MatogenAI',
-    install_requires=['DateTime==4.3', 'numpy==1.20.3', 'py4j==0.10.9', 'pyspark==3.1.1',
-                      'python-dateutil==2.8.1', 'pytz==2021.1', 'seaborn==0.11.1', 'six==1.14.0',
-                      'zope.interface==5.4.0']
+    # install_requires=['DateTime==4.3', 'numpy==1.20.3', 'py4j==0.10.9', 'pyspark==3.1.1',
+    #                   'python-dateutil==2.8.1', 'pytz==2021.1', 'seaborn==0.11.1', 'six==1.14.0',
+    #                   'zope.interface==5.4.0']
 )
