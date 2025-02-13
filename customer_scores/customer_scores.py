@@ -290,14 +290,13 @@ def EstablishedCustomerScore(ALL_Perc0Delq90Days, ALL_NumTrades180Days, ALL_Num0
 
     """
     `EST4` Calculation.  Derived from `ALL_Perc0Delq90Days`.
-    """
+    """                          
     try:
         UNS_MaxDelq1YearLT24M = UNS_MaxDelq1YearLT24M.replace(" ", "").upper()
     except Exception as e:
-        print(str(e))
-        return None
+        UNS_MaxDelq1YearLT24M = "" # print(str(e))
     if UNS_MaxDelq1YearLT24M == "":
-        EST4 =73
+        EST4 = 73
     elif UNS_MaxDelq1YearLT24M in ["!", "$", "-", "="]:
         EST4 = 0
     elif UNS_MaxDelq1YearLT24M in [".", "-1", "?", "@"]:
